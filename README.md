@@ -15,7 +15,7 @@ A: **No.** If you want to add a game to your bwaaa, you need to obtain the game 
 That being said, I won't be including any games with updates.
 
 ## Q: I want to host this as a website
-A: This is made to be ran locally, It is and will **never** be a website
+A: This is made to be ran locally, It will **never** be a website
 
 ## Q: Where can I ask more questions
 A: Discord. 
