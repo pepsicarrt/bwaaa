@@ -1,4 +1,4 @@
-# bwaaa
+# bwaaa <img align="right" width="87" height="97" alt="bwaaa" src="https://github.com/user-attachments/assets/bab8e1b0-2516-4b9d-888e-bfb044f40c2e" /> 
 An in-development about:blank tab cloaker.
 
 # Q&A
