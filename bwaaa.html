@@ -1,32 +1,39 @@
 <html>
 
 <head>
-<title>bwaaa</title>
+<title>bwaaa</title>    
+<link rel="icon" type="image/x-icon" href="https://github.com/pepsicarrt/bwaaa/blob/4008cbdb8eb440e529f58f42a2081f4272fd9280/bwaaa.png">
 </head>
 <style>
-body {background-color: gray;}
-header {color: white; text-align: center; font-size: 45px;}
-footer {color: white; text-align: center; font-size: 15px;}
-p {color: white; text-align: center;}
-div {text-align: center;}
+body {background-color: #F2C9D5;}
+header {color: black; text-align: center; font-size: 45px;}
+fish {color: black; text-align: center; font-size: 15px;}
+footer {color: black; text-align: center; font-size: 15px;}
+p {color: black; text-align: center;}
+nav {text-align: center;}
 
 </style>
 
 <body>
     <header>bwaaa :3</header>
     <footer>about:blank tab cloaking</footer>
+
 	<br>
-        <div>
+        <nav>
             <button onclick="[FUNCTION GOES HERE]()">[GAME NAME GOES HERE]</button>
-            <button onclick="cloakbwaaa()">Cloak bwaaa</button>
-        </div>
+        </nav>
 	<br>
 	<footer>version 1.0</footer>
-    <footer>beta branch</footer>
+    <footer>source branch</footer>
+    <nav>
+        <button onclick="cloak()">Cloak this tab</button>
+    </nav>
     <script>
-        function [NAME GOES HERE]() {
+        function [FUNCTION NAME GOES HERE]() {
             var win = window.open()
-            var url = "[FILE NAME OR LINK GOES HERE]"
+            var url = "LINK TO HTML/URL GOES HERE" <!--usually something like file:///home/user/Desktop/bwoppgame.html-->
+            win.document.body.style.margin = "0";
+            win.document.body.style.width = "vw";
             var iframe = win.document.createElement('iframe')
             iframe.style.width = "100%";
             iframe.style.height = "100%";
@@ -34,12 +41,14 @@ div {text-align: center;}
             iframe.src = url
             win.document.body.appendChild(iframe)
         }
-        function cloakbwaaa() {
-            var win = window.open()
+		function cloak() {
+		    var win = window.open()
             var url = "cloakbwaaa.html"
+            win.document.body.style.margin = "0";
+            win.document.body.style.width = "vw";
             var iframe = win.document.createElement('iframe')
             iframe.style.width = "100%";
-            iframe.style.height = "100%";
+            iframe.style.height = "100vh";
             iframe.style.border = "none";
             iframe.src = url
             win.document.body.appendChild(iframe)
@@ -48,5 +57,5 @@ div {text-align: center;}
 </body>
 
 </html>
+<!--The about:blank scripts were sourced from a template and heavily modified to work somewhat better-->
 
-<!--The about:blank scripts were sourced from a Template, so if they suck please let me know.-->
