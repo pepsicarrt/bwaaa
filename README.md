@@ -5,7 +5,7 @@ An in-development about:blank tab cloaker.
 all of these questions I wrote
 
 ## Q: what is this for
-A: If you have a service provider or network that restricts certain HTML games
+A: If you have a service provider or network that restricts certain HTML files
 
 ## Q: when will updates release
 A: There is no schedule, I update when I feel like updating.
