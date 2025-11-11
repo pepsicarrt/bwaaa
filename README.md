@@ -17,5 +17,8 @@ That being said, I won't be including any games with updates.
 ## Q: I want to host this as a website
 A: This is made to be ran locally, It will **never** be a website
 
+## Q: Can I host this on [insert game site name]
+A: Please ask me first. 
+
 ## Q: Where can I ask more questions
 A: Discord. 
