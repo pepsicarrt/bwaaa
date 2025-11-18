@@ -5,35 +5,26 @@
 <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/pepsicarrt/bwaaa/refs/heads/main/bwaaa.png">
 </head>
 <style>
-body {background-color: #F2C9D5;}
-header {color: black; text-align: center; font-size: 45px;}
-fish {color: black; text-align: center; font-size: 15px;}
-footer {color: black; text-align: center; font-size: 15px;}
-p {color: black; text-align: center;}
-nav {text-align: center;}
+body {background-color: #F2C9D5; font-family: "Comic Sans", "Comic Sans MS", Arial;}
+header {color: black; text-align: center; font-size: 45px; font-family: "Comic Sans", "Comic Sans MS", Arial;}
+footer {color: black; text-align: center; font-size: 15px; font-family: "Comic Sans", "Comic Sans MS", Arial;}
+nav {text-align: center; font-family: "Comic Sans", "Comic Sans MS", Arial;}
 
 </style>
 
 <body>
+
     <header>bwaaa :3</header>
     <footer>about:blank tab cloaking</footer>
 
 	<br>
-        <nav>
-            <button onclick="[FUNCTION GOES HERE]()">[GAME NAME GOES HERE]</button>
-        </nav>
-	<br>
-	<footer>version 1.0</footer>
-    <footer>source branch</footer>
-    <nav>
-        <button onclick="cloak()">Cloak this tab</button>
-    </nav>
-    <script>
-        function [FUNCTION NAME GOES HERE]() {
+	<script>
+        function NAMEGOESHERE() {
             var win = window.open()
-            var url = "LINK TO HTML/URL GOES HERE" <!--usually something like file:///home/user/Desktop/bwoppgame.html-->
+            var url = "https://example.com/" // usually something like file:///home/user/Desktop/bwoppgame.html
             win.document.body.style.margin = "0";
             win.document.body.style.width = "vw";
+            win.document.title = "bwaaa tab" // you can change this to whatever
             var iframe = win.document.createElement('iframe')
             iframe.style.width = "100%";
             iframe.style.height = "100%";
@@ -41,11 +32,13 @@ nav {text-align: center;}
             iframe.src = url
             win.document.body.appendChild(iframe)
         }
-		function cloak() {
+		// The rest of the code is recommended to NOT be edited. This can break very easily.
+        function cloak() {
 		    var win = window.open()
-            var url = "cloakbwaaa.html"
+            var url = "bwaaa.html"
             win.document.body.style.margin = "0";
             win.document.body.style.width = "vw";
+            win.document.title = "bwaaa"
             var iframe = win.document.createElement('iframe')
             iframe.style.width = "100%";
             iframe.style.height = "100vh";
@@ -53,10 +46,57 @@ nav {text-align: center;}
             iframe.src = url
             win.document.body.appendChild(iframe)
         }
+        function linky() {
+            var lnk = prompt("Enter your link of choice (iframe)")
+		    var win = window.open()
+            var url = lnk
+            win.document.body.style.margin = "0";
+            win.document.body.style.width = "vw";
+            win.document.title = "bwaaa tab"
+            var iframe = win.document.createElement('iframe')
+            iframe.style.width = "100%";
+            iframe.style.height = "100vh";
+            iframe.style.border = "none";
+            iframe.src = url
+            iframe.sandbox = "allow-scripts", "allow-forms", "allow-popups", "allow-scripts", "allow-top-navigation", "allow-presentation";
+            win.document.body.appendChild(iframe)
+        }
+        function ex() {
+            var lnk = prompt("Enter your link (embed)")
+		    var win = window.open()
+            var url = lnk
+            win.document.body.style.margin = "0";
+            win.document.body.style.width = "vw";
+            win.document.title = "bwaaa tab"
+            var embed = win.document.createElement('embed')
+            embed.type = "text/html";
+            embed.style.width = "100%";
+            embed.style.height = "100vh";
+            embed.style.border = "none";
+            embed.src = url
+            embed.sandbox = "allow-scripts", "allow-forms", "allow-popups", "allow-scripts", "allow-top-navigation", "allow-presentation";
+            win.document.body.appendChild(embed)
+        }
     </script>
+        <nav>
+            <nav>Links:</nav>
+            <button onclick=NAMEGOESHERE()>NAME GOES HERE</button>
+        </nav>
+	<br>
+    <footer>Experimental Options:</footer>
+    <nav>
+        <button onclick=cloak()>Cloak this tab</button>
+           <!--The following buttons below are HIGHLY experimental-->
+    <!--Certain sites may not work/connect, There isn't a way to fix this.-->
+        <button onclick=linky()>Cloak a URL (iframe)</button>
+        <button onclick=ex()>Cloak a URL (embed)</button>
+    </nav>
+    <br>
+    <footer>version 1.0</footer>
+    <footer>source branch</footer>
+
 </body>
 
 </html>
 <!--The about:blank scripts were sourced from a template and heavily modified to work somewhat better-->
-
-
+<!--The sandbox attribute may not work, I have no idea how to test this.-->
